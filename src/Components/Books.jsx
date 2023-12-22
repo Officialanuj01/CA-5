@@ -5,9 +5,14 @@ import { Link } from 'react-router-dom'
 
 
 function Books() {
+
+    // careating all the states that is needed in this project
+
     const [bookDetails,setBookDetails] = useState([])
     const [seachBookes , setSearchBookes] = useState("")
 
+
+    // using useEffect we are calling the calling, and get data 
     useEffect(()=>{
         fetch('https://reactnd-books-api.udacity.com/books',{
             headers: {
@@ -33,8 +38,12 @@ function Books() {
                 <div><input type="text"  placeholder=' 🔍 Search Book Name' className={Styles.searchBox} onChange={handleSearch}/></div>
                 <Link to="Register"><button className={Styles.register}>Register</button></Link>
             </div>
+
+            {/* we use filter to show the result of searchBox */}
             <div className={Styles.booksContainer}>
-                {bookDetails.map((book)=>{
+                {bookDetails
+                .filter((book)=> book.title.toLowerCase().includes(seachBookes.toLowerCase()))
+                .map((book)=>{
                 console.log(book)
                 return (
                     <div>

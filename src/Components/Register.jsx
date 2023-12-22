@@ -73,7 +73,7 @@ function Register() {
             
                 <form className={Styles.form}>
                     <h1>Register</h1>
-                    {(Object.keys(formErrors).length ===0 && isRegistered)?<p className={Styles.registeredSucussMessage}>Registration Succesful please click login to get the access</p> : ""}
+                    {(Object.keys(formErrors).length ===0 && isRegistered)?<p className={Styles.registeredSucussMessage}>Registration Succesful please click on login button to get the access</p> : ""}
                         <div>
                         
                         <input type="text" value={formvalues.firstname} onChange={handleChange} placeholder='Name' className='inputField' name="name"/>

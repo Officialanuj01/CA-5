@@ -1,0 +1,84 @@
+.form{
+    position: absolute;
+    top: 15vh;
+    left: 37vw;
+    background-color: white;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 30vw;
+    box-shadow: 1vw 1vh 1vw rgb(86, 83, 83);
+
+}
+
+.registeredSucussMessage{
+    color: green;
+    font-size: 1.5vw;
+    position: relative;
+    left: 1vw;
+
+}
+
+.errors{
+    color: red;
+    position: relative;
+    left: 2.7vw;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 4vh;
+    font-size: 3.5vw;
+    color: blue;
+}
+
+.conformation{
+    display: flex;
+}
+
+input{
+    height: 3vh;
+    width: 23vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1vw;
+    position: relative;
+    left: 2.5vw;
+    box-shadow: 1vw 1vh 1vw whitesmoke;
+
+}
+
+.checkbox{
+    height: fit-content;
+    width: fit-content;
+    margin-right: 3vw;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+button{
+    align-items: center;
+    height: 5vh;
+    width: 9vw;
+    margin: 1.5vh;
+    background-color: white;
+    font-size: 1.5vw;
+    border-radius: 20px;
+    box-shadow: 1vw 1vh 1vh #c390a5
+}
+
+button:hover{
+    background-color: palevioletred;
+    
+}
+
+button:active{
+    scale: 0.9;
+}

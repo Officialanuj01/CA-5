@@ -1,0 +1,128 @@
+body{
+    margin: 0vh;
+    padding: 0vh;
+    background-color: rgb(255, 254, 253);
+}
+
+.searchBox{
+    margin-top: 10%;
+    width: 30vw;
+    height: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.searchBox:hover{
+    scale: 1.02;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fce9f1;
+    height: 13vh;
+}
+
+.companyName{
+    font-size: 3vw;
+    margin-left: 1%;
+    color: red;
+}
+
+.register{
+    margin-right: 6vw;
+    margin-top: 2.5vh;
+    border-radius: 20px;
+    font-size: 1.5vw;
+    background-color: white;
+    height: 7vh;
+    width: 10vw;
+}
+
+.register:hover{
+    background-color: #e1a9c0;
+}
+
+
+
+.booksContainer{
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2vh;
+    margin-left: 16%;
+    margin-right: 18%;
+    margin-top: 5%;
+
+}
+
+.booksDetails{
+    width: 15vw;
+    height: 22vw;
+    margin-left: 16%;
+    margin-right: 18%;
+    margin-top: 5%;
+    border: 2px solid black;
+    border-radius: 5%;
+    box-shadow: 10px 10px 5px whitesmoke;
+    
+}
+
+.booksDetails:hover{
+    background-color: 	#fce9f1;
+    scale: 1.1;
+    cursor: pointer;
+
+}
+
+.individualBook{
+    
+    height: 30vh;
+    width: 10vw;
+    margin: 3vh;
+    
+    
+}
+
+
+
+
+.bookImg{
+    margin-top: 12;
+    height: 20vh;
+    width: 10vw;
+    margin-left: 0.75vw;
+    border: 2px solid black;
+    
+}
+
+.bookImg:hover{
+    scale: 1.03;
+}
+
+.bookTitle{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+.bookRateAndPrice{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.averageRating{
+    margin: 0;
+    padding: 0;
+
+}
+

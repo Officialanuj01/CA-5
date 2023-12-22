@@ -1,22 +1,21 @@
+import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './commponet/Navbar'
-import Contact from './commponet/Contact'
-import Home from './component/home';
-import RegistrationForm from './commponet/RegistrationForm'
-
+import Register from './Components/Register.jsx'
+import Books from './Components/Books.jsx'
 import './App.css'
+
 
 function App() {
   
 
   return (
     <>
-      <Navbar/>
-      <Routes>
-        <Route exact path='/' element={<Home/>}/>
-        <Route path='contact' element={<Contact/>}/>
-        <Route path='RegistrationForm' element={<RegistrationForm/>}/>
-      </Routes>
+    
+    <Routes>
+      <Route exact path = "/" element = {<Books/>}/>
+      <Route path = "Register" element = {<Register/>}/>
+
+    </Routes>
     </>
   )
 }

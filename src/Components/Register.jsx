@@ -94,7 +94,7 @@ function Register() {
                             <span>I have read all the terms, and conditions.</span>
                         </div>
                         <div className={Styles.buttons}>
-                            <Link to="/"><button href = "/" onClick={handleSubmit} id='resisteredBTN'>Register</button></Link>
+                            <Link to="/"><button href = "/" onClick={handleSubmit} id='resisteredBTN'>Sign Up</button></Link>
                             <Link to="/"><button>login</button></Link>
                         </div>
                         

@@ -77,17 +77,17 @@ function Register() {
                         <div>
                         
                         <input type="text" value={formvalues.firstname} onChange={handleChange} placeholder='Name' className='inputField' name="name"/>
-                        <p className='errors'>{formErrors.name}</p>
+                        <p className={Styles.errors}>{formErrors.name}</p>
                         </div>
                         <div>
                         <input type="text" value={formvalues.email} onChange={handleChange} placeholder='Email' className='inputField' name="email"/>
-                        <p className='errors'>{formErrors.email}</p>
+                        <p className={Styles.errors}>{formErrors.email}</p>
                         </div>
                         <div>
                         <input type="text" value={formvalues.phonenumber} onChange={handleChange} placeholder='Password' className='inputField' name="password"/>
-                        <p className='errors'>{formErrors.password}</p>
+                        <p className={Styles.errors}>{formErrors.password}</p>
                         <input type="text" value={formvalues.phonenumber} onChange={handleChange} placeholder=' Repeat Password' className='inputField' name="repeatPassword"/>
-                        <p className='errors'>{formErrors.repeatPassword}</p>
+                        <p className={Styles.errors}>{formErrors.repeatPassword}</p>
                         </div>
                         <div className={Styles.conformation}>
                             <input type="checkbox" className={Styles.checkbox} required/>
